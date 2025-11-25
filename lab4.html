@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            background: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background: #fff;
+            width: 400px;
+            margin: 60px auto;
+            box-shadow: 0 0 12px rgba(0,0,0,0.12);
+            border-radius: 8px;
+            padding: 36px 30px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 22px;
+        }
+        label {
+            display: block;
+            margin: 14px 0 6px;
+            color: #444;
+            font-size: 16px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], select {
+            width: 100%;
+            padding: 8px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 18px;
+            font-size: 15px;
+            background: #fafafa;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #2065d2;
+            color: #fff;
+            font-size: 17px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 12px;
+        }
+        button:hover {
+            background: #134fa4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Register Now</h2>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" name="pass" required />
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="" selected disabled>Choose</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
